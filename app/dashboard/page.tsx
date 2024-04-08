@@ -59,8 +59,8 @@ const handleFetchColors = async()=>{
   
   return (
     
-    colors.length !== 0 ? <main className="flex flex-row min-h-screen bg-white p-5">
-      <div className="w-8/12">
+    colors.length !== 0 ? <main className="flex flex-row min-h-screen max-h-screen bg-white p-5">
+      <div style={{overflow: 'scroll'}}  className="w-8/12">
 
 <Filter creativeModalStatus={creativeModalStatus} creatives={creativesList} colors={colors} handleFilterResult={handleFilterResult} />
 
